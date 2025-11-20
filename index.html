@@ -41,7 +41,9 @@
   <body>
     <a-scene mindar-image="imageTargetSrc: ./assets/targets_v2.mind; color-space: sRGB; renderer: colorManagement: true, physicallyCorrectLights: true; vr-mode-ui: enabled: false; device-orientation-permission-ui: enabled: false">
       <a-assets>
-        <img id="card" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.png" />
+        <!-- If you want to use an image as an asset, provide a valid image file. Example: -->
+       <img id="my-target.png" src="./assets/target.png" />
+        <!-- The .mind file is not an image, so it should not be referenced as an <img>. -->
         <video id="anim" src="./assets/animation.mp4" preload="auto" crossorigin="anonymous" loop="true" webkit-playsinline playsinline></video>
       </a-assets>
 
